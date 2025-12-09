@@ -188,9 +188,16 @@ footer {
 /* Image previews (PCB / 3D) */
 .image-view {
   width: 100%;
+  max-width: 780px;     /* limits image width */
+  max-height: 420px;    /* limits image height */
+  object-fit: contain;  /* preserves aspect ratio */
+  display: block;
+  margin: 20px auto 0;  /* centers image */
   border-radius: 16px;
   border: 1px solid var(--border);
+  background: #fff;
 }
+
 
 /* Feature list cards */
 .feature-grid {
@@ -221,3 +228,4 @@ footer {
     height: 450px;
   }
 }
+
