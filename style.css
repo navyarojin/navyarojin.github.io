@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #2563eb;
+  --bg: #f8fafc;
+  --text: #1f2933;
+  --card: #ffffff;
+  --muted: #6b7280;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1f2933, #111827);
+  color: white;
+  padding: 75px 25px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 2.6rem;
+}
+
+.hero p {
+  color: #d1d5db;
+}
+
+/* LAYOUT */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+section {
+  margin-bottom: 55px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+
+h2 i {
+  color: var(--primary);
+  margin-right: 6px;
+}
+
+/* SKILLS */
+.skills {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 12px;
+}
+
+.skills li {
+  background: var(--card);
+  padding: 14px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* PROJECTS */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.project-card h3 i {
+  color: var(--primary);
+}
+
+.project-card span {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.project-card ul {
+  padding-left: 18px;
+}
+
+.project-card li {
+  margin-bottom: 7px;
+  font-size: 0.95rem;
+}
+
+/* LINKS */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
