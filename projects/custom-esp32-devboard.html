@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom ESP32 Dev Board</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<header>
+  <a href="../index.html" class="back-link">← Back to Home</a>
+</header>
+
+<main class="project-detail">
+
+  <h1>Custom ESP32-S3 Development Board</h1>
+  <p class="subtitle">
+    Battery-powered ESP32-S3 dev board with USB, IMU, RTC, and SD card support
+  </p>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      This project is a fully custom ESP32-S3 development board designed for
+      embedded prototyping and healthcare/IoT applications.  
+      The board integrates power management, USB interface, motion sensing,
+      real-time clock, and expandable storage in a compact form factor.
+    </p>
+  </section>
+
+  <section>
+    <h2>Core Components</h2>
+    <ul>
+      <li>ESP32-S3-MINI module</li>
+      <li>LTC4054-based Li-ion battery charging circuit</li>
+      <li>LDO-based 3.3V regulation</li>
+      <li>USB Type-C interface with ESD protection</li>
+      <li>MPU6050 IMU (Accelerometer + Gyroscope)</li>
+      <li>DS3231 RTC</li>
+      <li>Micro SD card interface</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Power Architecture</h2>
+    <ul>
+      <li>USB-powered operation with resettable fuse protection</li>
+      <li>Single-cell Li-ion battery charging</li>
+      <li>Automatic power regulation to 3.3V</li>
+      <li>Decoupling and protection components for stable operation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Interfaces & I/O</h2>
+    <ul>
+      <li>USB Type-C data and power lines</li>
+      <li>I2C bus shared by IMU and RTC</li>
+      <li>SPI interface for SD card</li>
+      <li>Dedicated UART pins for programming and debugging</li>
+      <li>Boot and reset buttons</li>
+      <li>Status and user LEDs</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Design Files</h2>
+    <ul>
+      <li>Complete schematic design</li>
+      <li>Two-layer PCB layout</li>
+      <li>Validated pin mappings for ESP32-S3</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Applications</h2>
+    <ul>
+      <li>Embedded systems prototyping</li>
+      <li>Wearable and healthcare devices</li>
+      <li>IoT data logging systems</li>
+      <li>Sensor fusion experiments</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Repository</h2>
+    <a href="https://github.com/navyarojin/custom-esp32-devboard" target="_blank">
+      View Schematics & PCB Files on GitHub
+    </a>
+  </section>
+
+</main>
+</body>
+</html>
