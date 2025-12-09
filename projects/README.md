@@ -65,7 +65,6 @@ and product-oriented embedded development.
 - IoT nodes
 - Wearable electronics
 - Sensor data logging
-- Healthcare electronics experimentation
 
 ---
 
@@ -73,4 +72,3 @@ and product-oriented embedded development.
 
 **Navya Deena Rojin**  
 Electronics & Communication Engineering  
-Embedded Systems | PCB Design | Healthcare Electronics
