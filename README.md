@@ -1,4 +1,4 @@
-# Navya Deena Rojin — Portfolio Website
+# Portfolio Website
 
 This repository hosts my **personal portfolio website**, built to showcase my work and interests.
 
