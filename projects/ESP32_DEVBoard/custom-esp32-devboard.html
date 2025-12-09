@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Custom ESP32 Dev Board</title>
-  <link rel="stylesheet" href="../../style.css">
+
+  <!-- ROOT CSS (important: 2 levels up) -->
+  <link rel="stylesheet" href="../../style.css" />
 </head>
 
 <body>
-<header>
-  <a href="../index.html" class="back-link">← Back to Home</a>
-</header>
 
-<main class="project-detail">
-
-  <h1>Custom ESP32-S3 Development Board</h1>
-  <p class="subtitle">
-    Battery-powered ESP32-S3 dev board with USB, IMU, RTC, and SD card support
-  </p>
-
-  <section>
-    <h2>Overview</h2>
+  <!-- HERO (reuses your dark banner style) -->
+  <section class="hero">
+    <h1>Custom ESP32-S3 Development Board</h1>
     <p>
-      This project is a fully custom ESP32-S3 development board designed for
-      embedded prototyping and healthcare/IoT applications.  
-      The board integrates power management, USB interface, motion sensing,
-      real-time clock, and expandable storage in a compact form factor.
+      Battery-powered ESP32 dev board with USB-C, IMU, RTC and SD card support
     </p>
   </section>
 
-  <section>
-    <h2>Core Components</h2>
-    <ul>
-      <li>ESP32-S3-MINI module</li>
-      <li>LTC4054-based Li-ion battery charging circuit</li>
-      <li>LDO-based 3.3V regulation</li>
-      <li>USB Type-C interface with ESD protection</li>
-      <li>MPU6050 IMU (Accelerometer + Gyroscope)</li>
-      <li>DS3231 RTC</li>
-      <li>Micro SD card interface</li>
-    </ul>
-  </section>
+  <main>
 
-  <section>
-    <h2>Power Architecture</h2>
-    <ul>
-      <li>USB-powered operation with resettable fuse protection</li>
-      <li>Single-cell Li-ion battery charging</li>
-      <li>Automatic power regulation to 3.3V</li>
-      <li>Decoupling and protection components for stable operation</li>
-    </ul>
-  </section>
+    <!-- Back link -->
+    <a class="back-link" href="../../index.html">← Back to Projects</a>
 
-  <section>
-    <h2>Interfaces & I/O</h2>
-    <ul>
-      <li>USB Type-C data and power lines</li>
-      <li>I2C bus shared by IMU and RTC</li>
-      <li>SPI interface for SD card</li>
-      <li>Dedicated UART pins for programming and debugging</li>
-      <li>Boot and reset buttons</li>
-      <li>Status and user LEDs</li>
-    </ul>
-  </section>
+    <!-- OVERVIEW -->
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>
+        This project is a fully custom <strong>ESP32-S3 development board</strong>
+        designed for embedded prototyping, healthcare electronics, and IoT
+        applications. The board integrates power management, sensing,
+        real-time clock functionality, and expandable storage on a compact PCB.
+      </p>
+    </section>
 
-  <section>
-    <h2>Design Files</h2>
-    <ul>
-      <li>Complete schematic design</li>
-      <li>Two-layer PCB layout</li>
-      <li>Validated pin mappings for ESP32-S3</li>
-    </ul>
-  </section>
+    <!-- FEATURES -->
+    <section class="project-section">
+      <h2>Key Features</h2>
 
-  <section>
-    <h2>Applications</h2>
-    <ul>
-      <li>Embedded systems prototyping</li>
-      <li>Wearable and healthcare devices</li>
-      <li>IoT data logging systems</li>
-      <li>Sensor fusion experiments</li>
-    </ul>
-  </section>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>ESP32-S3</h4>
+          <p>ESP32-S3-MINI module for Wi-Fi enabled embedded applications.</p>
+        </div>
 
-  <section>
-    <h2>Repository</h2>
-    <a href="https://github.com/navyarojin/custom-esp32-devboard" target="_blank">
-      View Schematics & PCB Files on GitHub
-    </a>
-  </section>
+        <div class="feature-card">
+          <h4>Power Management</h4>
+          <p>
+            USB power + Li-ion battery charging using LTC4054 with LDO-regulated
+            3.3 V output.
+          </p>
+        </div>
 
-</main>
+        <div class="feature-card">
+          <h4>USB-C Interface</h4>
+          <p>USB Type-C with ESD protection for power and data.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Motion & Time</h4>
+          <p>MPU6050 IMU and DS3231 high-accuracy RTC.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Storage</h4>
+          <p>SPI-based micro-SD card interface for data logging.</p>
+        </div>
+
+        <div class="feature-card">
+          <h4>Debug & IO</h4>
+          <p>UART, I2C, SPI and GPIO headers for expansion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEMATIC -->
+    <section class="project-section">
+      <h2>Schematic</h2>
+      <iframe
+        class="viewer"
+        src="../../assets/esp32-devboard/ESP32-Board-Schematic.pdf"
+        title="ESP32 Dev Board Schematic">
+      </iframe>
+    </section>
+
+    <!-- PCB -->
+    <section class="project-section">
+      <h2>PCB Layout</h2>
+      <img
+        class="image-view"
+        src="../../assets/esp32-devboard/pcb-layout.png"
+        alt="ESP32 Dev Board PCB Layout">
+    </section>
+
+    <!-- 3D VIEW -->
+    <section class="project-section">
+      <h2>3D Board View</h2>
+      <img
+        class="image-view"
+        src="../../assets/esp32-devboard/board-3d.png"
+        alt="ESP32 Dev Board 3D View">
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="project-section">
+      <h2>Applications</h2>
+      <ul>
+        <li>Healthcare monitoring prototypes</li>
+        <li>Wearable electronics</li>
+        <li>IoT sensor nodes</li>
+        <li>Data logging systems</li>
+        <li>Embedded systems learning platform</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed & built by Navya Deena Rojin</p>
+  </footer>
+
 </body>
 </html>
