@@ -1,1 +1,8 @@
-# navyarojin.github.io
+# Navya Deena Rojin — Portfolio Website
+
+This repository hosts my **personal portfolio website**, built to showcase my work and interests in **Embedded Systems, PCB Design, and Biomedical Electronics**.
+
+🔗 **Live Website:**  
+https://navyarojin.github.io
+
+---
