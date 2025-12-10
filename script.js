@@ -17,5 +17,4 @@ document
   })
 
 const yearSpan = document.getElementById("year")
-
 yearSpan && (yearSpan.textContent = new Date().getFullYear())
