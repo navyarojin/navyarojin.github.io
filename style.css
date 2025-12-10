@@ -1,6 +1,5 @@
-/* RESET & BASE */
-*,
-*::before,
+*, 
+*::before, 
 *::after {
   box-sizing: border-box;
 }
@@ -17,26 +16,21 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
 }
 
-/* UTILITIES */
 .container {
   max-width: 1050px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* NAVBAR */
 .site-header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0 0 auto 0;
   z-index: 20;
   background: rgba(15, 23, 42, 0.94);
   backdrop-filter: blur(14px);
@@ -75,14 +69,11 @@ body {
 .nav-links a:hover {
   color: #ffffff;
 }
-
-/* HERO */
 .hero-section {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: 28px;
-  margin-top: 90px;
-  margin-bottom: 40px;
+  margin: 90px 0 40px;
   color: #f9fafb;
 }
 
@@ -124,7 +115,6 @@ body {
   gap: 12px;
 }
 
-/* HERO RIGHT PILLS */
 .hero-pill-grid {
   display: grid;
   gap: 14px;
@@ -134,7 +124,7 @@ body {
 .pill-card {
   background: #020617;
   border-radius: 20px;
-  padding: 18px 18px;
+  padding: 18px;
   border: 1px solid rgba(148, 163, 184, 0.5);
 }
 
@@ -146,126 +136,44 @@ body {
 
 .pill-card p {
   margin: 0;
-  color: #9ca3af;
   font-size: 0.9rem;
+  color: #9ca3af;
 }
 
-/* SECTIONS */
 .section {
   margin-bottom: 42px;
 }
 
 .section-title {
-  color: #e5e7eb;
   font-size: 1.3rem;
   margin-bottom: 18px;
+  color: #e5e7eb;
   border-left: 4px solid var(--primary);
   padding-left: 10px;
 }
-
-/* ABOUT */
-.about-layout {
+.about-card,
+.info-card,
+.skills-group,
+.timeline-content,
+.project-card,
+.contact-card,
+.project-page-hero,
+.project-section {
   background: var(--surface);
   border-radius: 20px;
   border: 1px solid var(--border);
-  padding: 24px 22px;
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
-  gap: 18px;
 }
 
-.about-layout p {
-  margin: 0;
+.about-card {
+  padding: 28px 30px;
+  max-width: 900px;
 }
 
-/* WHAT I DO */
-.cards-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+.about-card p {
+  max-width: 70ch;
+  color: var(--text);
 }
 
-.info-card {
-  background: var(--surface);
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  padding: 18px 18px;
-}
-
-.info-card h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-/* SKILLS */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
-}
-
-.skills-group {
-  background: var(--surface);
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  padding: 18px 18px;
-}
-
-.skills-group h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.skills-group ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
-/* EDUCATION */
-.timeline {
-  position: relative;
-  padding-left: 16px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: rgba(148, 163, 184, 0.6);
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 18px;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: -2px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--primary);
-}
-
-.timeline-content {
-  background: var(--surface);
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  padding: 14px 16px;
-}
-
-.timeline-meta {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 2px 0 8px;
-}
-
-/* PROJECTS */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -273,9 +181,6 @@ body {
 }
 
 .project-card {
-  background: var(--surface);
-  border-radius: 20px;
-  border: 1px solid var(--border);
   padding: 18px 18px 20px;
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.18);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -286,177 +191,34 @@ body {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.24);
 }
 
-.project-meta {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 2px 0 8px;
-}
-
-.project-desc {
-  margin: 0 0 8px;
-  color: #4b5563;
-  font-size: 0.95rem;
-}
-
-.project-list {
-  margin: 0 0 10px;
-  padding-left: 18px;
-  font-size: 0.9rem;
-  color: #4b5563;
-}
-
-.project-list li {
-  margin-bottom: 4px;
-}
-
-.project-link {
-  font-size: 0.92rem;
-  color: var(--primary);
-  text-decoration: none;
-}
-
-.project-link:hover {
-  text-decoration: underline;
-}
-
-/* CONTACT */
-.contact-text {
-  background: var(--surface);
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  padding: 18px 18px;
-  margin-bottom: 14px;
-}
-
-.contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.contact-actions a {
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-/* BUTTONS */
 .btn-primary,
 .btn-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 9px 18px;
+  padding: 10px 22px;
   font-size: 0.95rem;
-  border: 1px solid transparent;
   text-decoration: none;
 }
 
 .btn-primary {
   background: var(--primary);
-  color: #f9fafb;
-  border-color: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--primary);
 }
 
 .btn-primary:hover {
   background: #1d4ed8;
+  border-color: #1d4ed8;
 }
 
 .btn-outline {
   background: transparent;
   color: #e5e7eb;
-  border-color: rgba(148, 163, 184, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.8);
 }
 
-.btn-outline:hover {
-  border-color: #f9fafb;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 24px 20px 30px;
-  color: #9ca3af;
-  font-size: 0.85rem;
-}
-
-/* ========== PROJECT DETAIL PAGES (ESP32 / TremoSense) ========== */
-
-.project-page-main {
-  max-width: 960px;
-  margin: 90px auto 50px;
-  padding: 0 20px;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-decoration: none;
-  margin-bottom: 14px;
-}
-
-.back-link:hover {
-  color: var(--primary);
-}
-
-.project-page-hero {
-  background: var(--surface);
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  padding: 20px 22px;
-  margin-bottom: 22px;
-}
-
-.project-page-hero h1 {
-  margin: 0 0 6px;
-}
-
-.project-page-hero p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.project-section {
-  background: var(--surface);
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  padding: 20px 22px;
-  margin-bottom: 20px;
-}
-
-.project-section h2 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  border-left: 4px solid var(--primary);
-  padding-left: 10px;
-}
-
-.viewer {
-  width: 100%;
-  max-width: 900px;
-  height: 520px;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: #000;
-  margin-top: 12px;
-}
-
-.image-view {
-  width: 100%;
-  max-width: 760px;
-  max-height: 420px;
-  object-fit: contain;
-  display: block;
-  margin: 16px auto 4px;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  background: #fff;
-}
-
-/* ANIMATIONS (for scroll reveal) */
 .hidden {
   opacity: 0;
   transform: translateY(18px);
@@ -468,19 +230,14 @@ body {
   transition: all 0.6s ease;
 }
 
-/* RESPONSIVE */
 @media (max-width: 820px) {
   .hero-section {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .about-layout {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .nav-links {
-    gap: 12px;
     font-size: 0.85rem;
+    gap: 12px;
   }
 }
 
@@ -489,120 +246,7 @@ body {
     font-size: 2rem;
   }
 
-  .hero-section {
-    margin-top: 80px;
-  }
-
   .viewer {
     height: 380px;
   }
-
-  .image-view {
-    max-height: 320px;
-  }
 }
-/* ========= CONTACT FIX ========= */
-
-.contact-card {
-  background: var(--surface);
-  border-radius: 22px;
-  border: 1px solid var(--border);
-  padding: 28px 26px;
-  max-width: 900px;
-}
-
-.contact-card p {
-  margin: 0 0 18px;
-  font-size: 1rem;
-  color: var(--text);
-}
-
-.contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: center;
-}
-
-/* Text links styled properly */
-.btn-link {
-  font-size: 0.95rem;
-  color: var(--primary);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.btn-link:hover {
-  text-decoration: underline;
-}
-
-/* Mobile spacing */
-@media (max-width: 600px) {
-  .contact-card {
-    padding: 22px 20px;
-  }
-
-  .contact-actions {
-    gap: 12px;
-  }
-}
-/* ========= ABOUT SECTION SPACING FIX ========= */
-
-.about-card {
-  background: var(--surface);
-  border-radius: 22px;
-  border: 1px solid var(--border);
-  padding: 28px 30px;
-  max-width: 900px;
-}
-
-.about-card p {
-  margin: 0;
-  line-height: 1.55;       /* tighter, more readable */
-  font-size: 1rem;
-  color: var(--text);
-  max-width: 70ch;         /* prevents stretched lines */
-}
-
-/* ===== FIX PRIMARY BUTTON VISIBILITY ===== */
-
-.btn-primary {
-  background: var(--primary);      /* solid blue */
-  color: #ffffff;                  /* FORCE visible text */
-  border: 1px solid var(--primary);
-  border-radius: 999px;
-  padding: 10px 22px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 110px;                /* prevents weird pill */
-}
-
-.btn-primary:hover {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
-  color: #ffffff;
-}
-/* ===== FORCE EMAIL BUTTON TEXT VISIBILITY ===== */
-
-.contact-actions .btn-primary,
-.contact-actions .btn-primary:visited,
-.contact-actions .btn-primary:active,
-.contact-actions .btn-primary:focus {
-  color: #ffffff !important;
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-.contact-actions .btn-primary:hover {
-  color: #ffffff !important;
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
-}
-
-
-
-
