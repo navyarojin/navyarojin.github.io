@@ -335,7 +335,6 @@ body {
 }
 
 .contact-actions a {
-  color: var(--primary);
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -587,6 +586,23 @@ body {
   border-color: #1d4ed8;
   color: #ffffff;
 }
+/* ===== FORCE EMAIL BUTTON TEXT VISIBILITY ===== */
+
+.contact-actions .btn-primary,
+.contact-actions .btn-primary:visited,
+.contact-actions .btn-primary:active,
+.contact-actions .btn-primary:focus {
+  color: #ffffff !important;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.contact-actions .btn-primary:hover {
+  color: #ffffff !important;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
 
 
 
