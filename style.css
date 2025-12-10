@@ -6,13 +6,17 @@
 }
 
 :root {
-  --bg: #0e0e10;
-  --surface: #f7f7f5;
+  --bg: #0b0b0c;
+
+  --surface: #f6f6f4;
   --card: #ffffff;
-  --text: #1c1c1e;
-  --muted: #6a6a6f;
-  --border: #e3e3e0;
-  --accent: #3a5a7a;
+
+  --text: #1a1a1a;
+  --muted: #5f5f63;
+
+  --border: #e2e2de;
+
+  --accent: #2a2a2a;
 }
 
 body {
@@ -295,3 +299,4 @@ body {
     max-height: 300px;
   }
 }
+
