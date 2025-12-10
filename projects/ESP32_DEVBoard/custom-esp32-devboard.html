@@ -2,80 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Custom ESP32 Dev Board</title>
-
-  <!-- Root CSS (2 levels up) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom ESP32-S3 Development Board</title>
   <link rel="stylesheet" href="../../style.css" />
+  <script defer src="../../script.js"></script>
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Custom ESP32-S3 Development Board</h1>
-    <p>
-      Battery-powered ESP32 dev board with USB-C, IMU, RTC and SD card support
-    </p>
-  </section>
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="logo">Navya<span>.</span></div>
+      <nav class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <main>
+  <main class="project-page-main">
 
-    <!-- Back link -->
-    <a class="back-link" href="../../index.html">← Back to Projects</a>
+    <a class="back-link" href="../../index.html#projects">← Back to projects</a>
 
-    <!-- OVERVIEW -->
-    <section class="project-section">
-      <h2>Overview</h2>
+    <section class="project-page-hero">
+      <h1>Custom ESP32-S3 Development Board</h1>
       <p>
-        This project is a fully custom <strong>ESP32-S3 development board</strong>
-        designed for embedded prototyping, healthcare electronics, and IoT
-        applications. The board integrates power management, sensing,
-        real-time clock functionality, and expandable storage on a compact PCB.
+        Battery-powered ESP32 dev board with USB-C, IMU, RTC, SD card and Li-ion
+        charging for rapid embedded prototyping.
       </p>
     </section>
 
-    <!-- FEATURES -->
     <section class="project-section">
-      <h2>Key Features</h2>
-
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h4>ESP32-S3</h4>
-          <p>ESP32-S3-MINI module for Wi-Fi enabled embedded applications.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Power Management</h4>
-          <p>
-            USB power + Li-ion battery charging using LTC4054 with LDO-regulated
-            3.3&nbsp;V output.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <h4>USB-C Interface</h4>
-          <p>USB Type-C with ESD protection for power and data.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Motion & Time</h4>
-          <p>MPU6050 IMU and DS3231 high-accuracy RTC.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Storage</h4>
-          <p>SPI-based micro-SD card interface for data logging.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Debug & IO</h4>
-          <p>UART, I2C, SPI and GPIO headers for expansion.</p>
-        </div>
-      </div>
+      <h2>Overview</h2>
+      <p>
+        This custom <strong>ESP32-S3 development board</strong> is designed for
+        embedded prototyping, healthcare devices, and IoT sensor nodes. It
+        integrates power management, motion sensing, real-time clock
+        functionality, and removable storage on a compact PCB.
+      </p>
     </section>
 
-    <!-- SCHEMATIC -->
+    <section class="project-section">
+      <h2>Key features</h2>
+      <ul>
+        <li>ESP32-S3-MINI module for Wi-Fi enabled embedded applications</li>
+        <li>LTC4054-based Li-ion charging from USB with LDO-regulated 3.3&nbsp;V rail</li>
+        <li>USB-C connector with ESD protection for power & data</li>
+        <li>MPU6050 IMU and DS3231 RTC on a shared I²C bus</li>
+        <li>Micro-SD card interface for logging and data capture</li>
+        <li>GPIO, UART, SPI and I²C headers for expansion and debugging</li>
+      </ul>
+    </section>
+
     <section class="project-section">
       <h2>Schematic</h2>
       <iframe
@@ -85,9 +63,8 @@
       </iframe>
     </section>
 
-    <!-- PCB -->
     <section class="project-section">
-      <h2>PCB Layout</h2>
+      <h2>PCB layout</h2>
       <a href="../../assets/esp32-devboard/pcb-layout.png" target="_blank">
         <img
           class="image-view"
@@ -96,9 +73,8 @@
       </a>
     </section>
 
-    <!-- 3D VIEW -->
     <section class="project-section">
-      <h2>3D Board View</h2>
+      <h2>3D board view</h2>
       <a href="../../assets/esp32-devboard/board-3d.png" target="_blank">
         <img
           class="image-view"
@@ -107,23 +83,17 @@
       </a>
     </section>
 
-    <!-- APPLICATIONS -->
     <section class="project-section">
       <h2>Applications</h2>
       <ul>
         <li>Healthcare monitoring prototypes</li>
-        <li>Wearable electronics</li>
-        <li>IoT sensor nodes</li>
-        <li>Data logging systems</li>
-        <li>Embedded systems learning platform</li>
+        <li>Wearable or bedside IoT devices</li>
+        <li>General embedded systems prototyping</li>
+        <li>Data-logging and sensor-fusion experiments</li>
       </ul>
     </section>
 
   </main>
-
-  <footer>
-    <p>Designed & built by Navya Deena Rojin</p>
-  </footer>
 
 </body>
 </html>
