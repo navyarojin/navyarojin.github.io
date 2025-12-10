@@ -547,5 +547,24 @@ body {
     gap: 12px;
   }
 }
+/* ========= ABOUT SECTION SPACING FIX ========= */
+
+.about-card {
+  background: var(--surface);
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  padding: 28px 30px;
+  max-width: 900px;
+}
+
+.about-card p {
+  margin: 0;
+  line-height: 1.55;       /* tighter, more readable */
+  font-size: 1rem;
+  color: var(--text);
+  max-width: 70ch;         /* prevents stretched lines */
+}
+
+
 
 
