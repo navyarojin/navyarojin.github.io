@@ -502,3 +502,50 @@ body {
     max-height: 320px;
   }
 }
+/* ========= CONTACT FIX ========= */
+
+.contact-card {
+  background: var(--surface);
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  padding: 28px 26px;
+  max-width: 900px;
+}
+
+.contact-card p {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Text links styled properly */
+.btn-link {
+  font-size: 0.95rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 22px 20px;
+  }
+
+  .contact-actions {
+    gap: 12px;
+  }
+}
+
+
