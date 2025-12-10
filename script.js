@@ -1,7 +1,7 @@
-/* Scroll reveal animation */
+// Scroll reveal for sections and project cards
 const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
       }
@@ -11,23 +11,13 @@ const observer = new IntersectionObserver(
 );
 
 document
-  .querySelectorAll("section, .project-card, .project-section")
-  .forEach(el => {
+  .querySelectorAll(".section, .hero-section, .project-card, .project-section")
+  .forEach((el) => {
     el.classList.add("hidden");
     observer.observe(el);
   });
 
-/* Subtle project hover accent */
-document.querySelectorAll(".project-card").forEach(card => {
-  card.addEventListener("mouseenter", () => {
-    card.style.borderColor = "#2563eb";
-  });
-  card.addEventListener("mouseleave", () => {
-    card.style.borderColor = "var(--border)";
-  });
-});
-
-/* Footer year */
+// Footer year
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
