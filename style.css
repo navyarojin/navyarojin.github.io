@@ -299,4 +299,32 @@ body {
     max-height: 300px;
   }
 }
+a {
+  color: var(--accent) !important;
+}
+
+a:hover {
+  color: #000000 !important;
+}
+
+.btn-primary {
+  background: #111111 !important;
+  border-color: #111111 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background: #000000 !important;
+  border-color: #000000 !important;
+}
+.section-title,
+.project-section h2 {
+  border-left-color: #000000 !important;
+}
+
+.logo span {
+  color: #ffffff !important;
+}
+
+
 
