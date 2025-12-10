@@ -3,91 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Navya Deena Rojin</title>
-
+  <title>Navya Deena Rojin – Embedded & Healthcare Electronics</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Navya Deena Rojin</h1>
-    <p>
-      Electronics & Communication Engineering Undergraduate <br>
-      Embedded Systems • PCB Design • Healthcare Electronics
-    </p>
-  </section>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="logo">Navya<span>.</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
 
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Electronics & Communication • Embedded Systems</p>
+        <h1>
+          I design & build<br>
+          <span class="accent">embedded hardware</span><br>
+          for healthcare & IoT.
+        </h1>
+        <p class="hero-text">
+          From schematics and PCB layout to firmware and enclosures,
+          I enjoy turning complex problems into reliable, human-centered devices.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View my work</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- Split panels inspired by designer / coder -->
+      <div class="hero-panels">
+        <div class="hero-panel hardware">
+          <h2>hardware</h2>
+          <p>Custom PCBs, power, sensors, connectors, and 3D-printed enclosures.</p>
+        </div>
+        <div class="hero-panel firmware">
+          <h2>&lt; firmware /&gt;</h2>
+          <p>Embedded C, ESP32, real-time data, and healthcare-focused logic.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ABOUT -->
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am an Electronics and Communication Engineering undergraduate with a
-        strong interest in embedded systems, PCB design, and healthcare-focused
-        electronics. I enjoy building complete systems — from schematics to
-        firmware — with a focus on real-world impact.
-      </p>
+    <section id="about" class="section-card">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>
+          I’m Navya Deena Rojin, an Electronics and Communication Engineering
+          undergraduate specialising in embedded systems and PCB design.
+          I love building end-to-end systems that combine sensors, connectivity,
+          and thoughtful hardware design — especially for healthcare and
+          assistive technologies.
+        </p>
+        <div>
+          <h3>Core skills</h3>
+          <ul class="skills-list">
+            <li>ESP32 / Arduino / microcontrollers</li>
+            <li>Schematic design & PCB layout (EasyEDA)</li>
+            <li>Embedded C & basic firmware architecture</li>
+            <li>Healthcare & wearable electronics</li>
+            <li>3D enclosure design (Fusion 360)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
+    <section id="projects" class="section-card">
+      <h2>Selected work</h2>
 
-      <div class="projects-container">
+      <div class="projects-grid">
 
-        <!-- ESP32 DEV BOARD -->
-        <div class="project-card">
-          <h3>Custom ESP32-S3 Development Board</h3>
-
-          <ul>
-            <li>Battery-powered ESP32-S3 board with USB-C</li>
-            <li>IMU, RTC, and micro-SD integration</li>
-            <li>Custom schematic & PCB design</li>
+        <!-- ESP32 Dev Board -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Custom ESP32-S3 Development Board</h3>
+            <span class="project-tag">Embedded • PCB • IoT</span>
+          </div>
+          <p class="project-summary">
+            A custom ESP32-S3 dev board with USB-C, Li-ion charging, IMU,
+            RTC, and micro-SD, designed for prototyping healthcare and
+            data-logging applications.
+          </p>
+          <ul class="project-bullets">
+            <li>On-board power management and battery charging</li>
+            <li>Integrated IMU (MPU6050) and DS3231 RTC</li>
+            <li>Micro-SD storage and accessible headers for expansion</li>
           </ul>
-
-          <a href="projects/ESP32_DEVBoard/custom-esp32-devboard.html">
+          <a href="projects/ESP32_DEVBoard/custom-esp32-devboard.html" class="project-link">
             View project →
           </a>
-        </div>
+        </article>
 
-        <!-- TREMOSENSE -->
-        <div class="project-card">
-          <h3>TremoSense</h3>
-
-          <ul>
-            <li>Wearable tremor measurement device</li>
-            <li>Captures tremor frequency & amplitude</li>
-            <li>Healthcare application for Parkinson’s monitoring</li>
+        <!-- TremoSense -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>TremoSense</h3>
+            <span class="project-tag">Healthcare • Wearable</span>
+          </div>
+          <p class="project-summary">
+            A wrist-worn system to capture tremor frequency and amplitude,
+            aimed at analysing Parkinson’s medication efficacy using
+            objective motion data.
+          </p>
+          <ul class="project-bullets">
+            <li>High-sensitivity IMU-based tremor measurement</li>
+            <li>Feature extraction for tremor frequency & amplitude</li>
+            <li>Wearable-friendly PCB and hardware architecture</li>
           </ul>
-
-          <a href="projects/TremoSense/tremosense.html">
+          <a href="projects/TremoSense/tremosense.html" class="project-link">
             View project →
           </a>
-        </div>
+        </article>
 
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section>
-      <h2>Skills</h2>
-
-      <ul class="skills">
-        <li>Embedded C / Microcontrollers</li>
-        <li>ESP32 / Arduino Platforms</li>
-        <li>Schematic & PCB Design (EasyEDA)</li>
-        <li>Healthcare Electronics</li>
-        <li>Fusion 360 (3D Enclosures)</li>
-      </ul>
+    <!-- CONTACT -->
+    <section id="contact" class="section-card">
+      <h2>Contact</h2>
+      <p>
+        Interested in embedded / healthcare electronics, internships, or collaborations?
+        I’d love to connect.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:navyadeenarojin@gmail.com" class="btn-primary">Email me</a>
+        <a href="https://github.com/navyarojin" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>© Navya Deena Rojin</p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Navya Deena Rojin • Built with HTML, CSS & a lot of debugging.</p>
   </footer>
 
 </body>
