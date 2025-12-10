@@ -2,107 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TremoSense – Tremor Measurement Device</title>
-
-  <!-- Root CSS -->
   <link rel="stylesheet" href="../../style.css" />
+  <script defer src="../../script.js"></script>
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>TremoSense</h1>
-    <p>
-      Wearable system to measure tremor frequency and amplitude for
-      Parkinson’s medication efficacy analysis
-    </p>
-  </section>
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="logo">Navya<span>.</span></div>
+      <nav class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <main>
+  <main class="project-page-main">
 
-    <!-- Back link -->
-    <a class="back-link" href="../../index.html">← Back to Projects</a>
+    <a class="back-link" href="../../index.html#projects">← Back to projects</a>
 
-    <!-- OVERVIEW -->
+    <section class="project-page-hero">
+      <h1>TremoSense</h1>
+      <p>
+        Wearable system to measure tremor frequency and amplitude from the wrist
+        for Parkinson’s medication efficacy analysis.
+      </p>
+    </section>
+
     <section class="project-section">
       <h2>Overview</h2>
       <p>
         <strong>TremoSense</strong> is a custom embedded system designed to
-        capture and analyze tremor characteristics such as
-        <strong>frequency and amplitude</strong> from the wrist.
-        The goal of this device is to assist in evaluating
-        <strong>medication effectiveness in Parkinson’s disease patients</strong>.
-      </p>
-      <p>
-        The system integrates motion sensing, signal processing, and
-        data acquisition on a compact PCB suitable for wearable applications.
+        capture and analyse tremor characteristics such as frequency and
+        amplitude. By recording motion from the wrist, it aims to provide
+        objective, quantifiable metrics to support clinicians when evaluating
+        Parkinson’s disease treatment.
       </p>
     </section>
 
-  <section class="project-section">
-  <h2>Abstract</h2>
-  <p>
-    TremoSense is a wearable, embedded system designed to quantify hand tremors
-    by extracting frequency and amplitude features from wrist motion data.
-    The project targets healthcare applications, specifically evaluating
-    Parkinson’s disease medication efficacy through objective tremor metrics.
-  </p>
-</section>
-
-
-    <!-- KEY FEATURES -->
     <section class="project-section">
-      <h2>Key Features</h2>
-
-      <div class="feature-grid">
-        <div class="feature-card">
-          <h4>Motion Sensing</h4>
-          <p>High-resolution IMU for detecting fine hand tremors.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Tremor Analysis</h4>
-          <p>Captures tremor frequency and amplitude from wrist motion.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Wearable Design</h4>
-          <p>Compact PCB suitable for continuous patient monitoring.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Microcontroller Based</h4>
-          <p>Low-power MCU for real-time data acquisition and processing.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Data Logging</h4>
-          <p>Supports external storage / serial data extraction.</p>
-        </div>
-
-        <div class="feature-card">
-          <h4>Healthcare Focus</h4>
-          <p>Designed specifically for Parkinson’s tremor assessment.</p>
-        </div>
-      </div>
+      <h2>Key features</h2>
+      <ul>
+        <li>High-resolution IMU for fine hand-tremor sensing</li>
+        <li>Feature extraction for tremor frequency and amplitude</li>
+        <li>Compact, wearable-friendly PCB form factor</li>
+        <li>Low-power microcontroller for real-time data acquisition</li>
+        <li>Support for data logging / external analysis</li>
+      </ul>
     </section>
 
-    <!-- SCHEMATIC -->
     <section class="project-section">
-      <h2>PCB Layout</h2>
-      <a href="../../assets/tremosense/pcb-schematic.png" target="_blank">
-        <img
-          class="image-view"
-          src="../../assets/tremosense/pcb-schematic.png" 
-          alt="TremoSense PCB Schematic">
-      </a>
+      <h2>Schematic</h2>
+      <iframe
+        class="viewer"
+        src="../../assets/tremosense/TremoSense-Schematic.pdf"
+        title="TremoSense Schematic">
+      </iframe>
     </section>
 
-    <!-- PCB -->
     <section class="project-section">
-      <h2>PCB Layout</h2>
+      <h2>PCB layout</h2>
       <a href="../../assets/tremosense/pcb-layout.png" target="_blank">
         <img
           class="image-view"
@@ -111,9 +73,8 @@
       </a>
     </section>
 
-    <!-- 3D VIEW -->
     <section class="project-section">
-      <h2>3D Board View</h2>
+      <h2>3D board view</h2>
       <a href="../../assets/tremosense/board-3d.png" target="_blank">
         <img
           class="image-view"
@@ -122,23 +83,17 @@
       </a>
     </section>
 
-    <!-- APPLICATIONS -->
     <section class="project-section">
       <h2>Applications</h2>
       <ul>
         <li>Parkinson’s disease tremor monitoring</li>
-        <li>Medication efficacy analysis</li>
-        <li>Wearable healthcare devices</li>
-        <li>Clinical data collection</li>
-        <li>Research in neurological disorders</li>
+        <li>Medication efficacy assessment</li>
+        <li>Wearable healthcare research devices</li>
+        <li>Clinical data collection & studies</li>
       </ul>
     </section>
 
   </main>
-
-  <footer>
-    <p>Designed & built by Navya Deena Rojin</p>
-  </footer>
 
 </body>
 </html>
