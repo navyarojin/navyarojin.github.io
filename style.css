@@ -90,11 +90,10 @@ body {
 }
 
 .hero-text-block {
-  background: #161618;
-  border-radius: 22px;
-  padding: 30px 28px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #111111;
+  border: 1px solid #222222;
 }
+
 
 .hero-tag {
   font-size: 0.75rem;
@@ -132,23 +131,20 @@ body {
 }
 
 .pill-card {
-  background: #1a1a1c;
+  background: #141414;
   border-radius: 20px;
   padding: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #242424;
 }
 
 .pill-card h3 {
-  margin: 0 0 6px;
-  font-size: 1rem;
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .pill-card p {
-  margin: 0;
-  color: #bdbdbd;
-  font-size: 0.9rem;
+  color: #b5b5b5;
 }
+
 
 .section-title {
   color: #ededed;
@@ -325,6 +321,7 @@ a:hover {
 .logo span {
   color: #ffffff !important;
 }
+
 
 
 
