@@ -124,32 +124,6 @@ body {
   gap: 12px;
 }
 
-/* HERO RIGHT PILLS */
-.hero-pill-grid {
-  display: grid;
-  gap: 14px;
-  align-content: start;
-}
-
-.pill-card {
-  background: #020617;
-  border-radius: 20px;
-  padding: 18px 18px;
-  border: 1px solid rgba(148, 163, 184, 0.5);
-}
-
-.pill-card h3 {
-  margin: 0 0 6px;
-  font-size: 1rem;
-  color: #e5e7eb;
-}
-
-.pill-card p {
-  margin: 0;
-  color: #9ca3af;
-  font-size: 0.9rem;
-}
-
 /* SECTIONS */
 .section {
   margin-bottom: 42px;
@@ -776,6 +750,7 @@ body {
   background-color: #1d4ed8;
   border-color: #1d4ed8;
 }
+
 
 
 
