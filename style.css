@@ -310,39 +310,76 @@ body {
 .project-link:hover {
   text-decoration: underline;
 }
-/* Ongoing Projects Section */
+/* ----- ONGOING PROJECTS SECTION ----- */
+
 #ongoing-projects {
   margin-top: 80px;
 }
 
 .ongoing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
 }
 
+/* Card style (dark mode) */
 .ongoing-card {
-  background: #121a2a;              
-  border: 1px solid #1e2737;
-  padding: 24px;
-  border-radius: 16px;
-  color: #dbe4f0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: transform 0.25s ease;
+  background: #1b2433;
+  border: 1px solid #2a3344;
+  padding: 22px;
+  border-radius: 14px;
+  color: #e7eef9; 
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  transition: transform .25s ease, border-color .25s ease;
 }
 
 .ongoing-card:hover {
   transform: translateY(-6px);
+  border-color: #4b6cff;
 }
 
-.ongoing-card h3 {
+/* Header with icon */
+.ongoing-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 8px;
 }
 
-.ongoing-desc {
-  margin-top: 8px;
-  color: #8894a7;
+.icon {
+  font-size: 22px;
+  color: #4b6cff;
 }
+
+/* Text */
+.ongoing-desc {
+  margin-top: 10px;
+  color: #b6c2d3;
+  line-height: 1.5;
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  background: #2a3344;
+  height: 10px;
+  border-radius: 6px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(90deg, #4b6cff, #7a9bff);
+  border-radius: 6px;
+}
+
+.progress-label {
+  font-size: 14px;
+  color: #9db0c9;
+  margin-top: 6px;
+}
+
 
 .contact-card {
   background: var(--surface);
@@ -512,4 +549,5 @@ body {
     gap: 12px;
   }
 }
+
 
