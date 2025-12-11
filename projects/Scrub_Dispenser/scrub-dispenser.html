@@ -5,47 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Non-Contact Scrub Dispenser</title>
   <link rel="stylesheet" href="../../style.css" />
+  <script defer src="../../script.js"></script>
 </head>
 
 <body>
 
-  <main class="section container project-detail">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="logo">Navya<span>.</span></div>
+      <nav class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h1 class="project-title">Non-Contact Scrub Dispensing System</h1>
-    <p class="project-meta">Healthcare • IR Sensing • Internship</p>
+  <main class="project-page-main">
 
-    <p class="project-desc">
-      Developed as part of my 2nd-year summer internship at BCMCH Thiruvalla under IEEE EMBS.
-      This system uses IR-based non-contact sensing and a peristaltic pump to dispense scrub fluid
-      without contamination, clogging, or expensive electronics. The design includes a
-      custom PCB, 3D-printed enclosure, and screw-mount bottle interface suitable for hospital use.
-    </p>
+    <a class="back-link" href="../../index.html#projects">← Back to projects</a>
 
-    <h2>Key Features</h2>
-    <ul class="project-list">
-      <li>Touch-free IR sensing for hygienic dispensing</li>
-      <li>Peristaltic pump to prevent backflow and clogging</li>
-      <li>Low-cost analog electronics (no microcontroller required)</li>
-      <li>Custom comparator-based control PCB</li>
-      <li>3D-printed enclosure with wall-mount system</li>
-      <li>Designed specifically for clinical scrub fluid bottles</li>
-    </ul>
+    <!-- HERO -->
+    <section class="project-page-hero">
+      <h1>Non-Contact Scrub Dispensing System</h1>
+      <p>
+        IR-based scrub dispensing system with a peristaltic pump, developed during
+        my 2nd-year summer internship at BCMCH Thiruvalla under IEEE EMBS.
+      </p>
+    </section>
 
-    <h2>Schematic</h2>
-    <img src="../../assets/Scrub_Dispensor/scrub-schematic.png" class="proj-img" alt="Scrub System Schematic" />
+    <!-- OVERVIEW -->
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>
+        This system enables fully touch-free dispensing of scrub fluid using IR proximity sensing
+        and a peristaltic pump to prevent contamination and clogging. Built with comparator-based
+        analog electronics, a custom PCB, and a 3D-printed enclosure, it was designed for
+        hospital environments and integrates directly with screw-on medical scrub bottles.
+      </p>
+    </section>
 
-    <h2>PCB Layout</h2>
-    <img src="../../assets/Scrub_Dispensor/scrub-layout.png" class="proj-img" alt="Scrub System PCB Layout" />
+    <!-- KEY FEATURES -->
+    <section class="project-section">
+      <h2>Key Features</h2>
+      <ul>
+        <li>IR-based sensing for hygienic hands-free dispensing</li>
+        <li>Peristaltic pump prevents backflow & fluid contamination</li>
+        <li>No microcontroller required — low-cost analog design</li>
+        <li>Custom PCB using comparator-based control</li>
+        <li>3D-printed, wall-mountable enclosure</li>
+        <li>Designed for clinical scrub fluid bottles</li>
+      </ul>
+    </section>
 
-    <h2>3D Model</h2>
-    <img src="../../assets/Scrub_Dispensor/scrub-3d.jpg" class="proj-img" alt="Scrub System CAD Model" />
+    <!-- SCHEMATIC -->
+    <section class="project-section">
+      <h2>Schematic</h2>
+      <a href="../../assets/Scrub_Dispensor/scrub-schematic.png" target="_blank">
+        <img
+          class="image-view"
+          src="../../assets/Scrub_Dispensor/scrub-schematic.png"
+          alt="Scrub Dispenser Schematic"
+        />
+      </a>
+    </section>
 
-    <h2>Deployed System</h2>
-    <img src="../../assets/Scrub_Dispensor/scrub-thumb.jpg" class="proj-img" alt="Installed Scrub Dispenser" />
+    <!-- PCB LAYOUT -->
+    <section class="project-section">
+      <h2>PCB Layout</h2>
+      <a href="../../assets/Scrub_Dispensor/scrub-layout.png" target="_blank">
+        <img
+          class="image-view"
+          src="../../assets/Scrub_Dispensor/scrub-layout.png"
+          alt="Scrub Dispenser PCB Layout"
+        />
+      </a>
+    </section>
 
-    <a href="../../index.html" class="btn-primary" style="margin-top: 20px;">
-      ← Back to Portfolio
-    </a>
+    <!-- 3D MODEL -->
+    <section class="project-section">
+      <h2>3D Model</h2>
+      <a href="../../assets/Scrub_Dispensor/scrub-3d.jpg" target="_blank">
+        <img
+          class="image-view"
+          src="../../assets/Scrub_Dispensor/scrub-3d.jpg"
+          alt="Scrub Dispenser CAD Model"
+        />
+      </a>
+    </section>
+
+    <!-- DEPLOYED SYSTEM -->
+    <section class="project-section">
+      <h2>Deployed System</h2>
+      <a href="../../assets/Scrub_Dispensor/scrub-thumb.jpg" target="_blank">
+        <img
+          class="image-view"
+          src="../../assets/Scrub_Dispensor/scrub-thumb.jpg"
+          alt="Installed Scrub Dispenser"
+        />
+      </a>
+    </section>
 
   </main>
 
