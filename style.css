@@ -304,6 +304,42 @@ body {
   color: #4b5563;
 }
 
+/* Skill card icon */
+.skill-icon {
+  font-size: 28px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Progress bar container */
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-item span {
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Bar background */
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Bar fill */
+.bar span {
+  display: block;
+  height: 100%;
+  background: #2563eb;
+  border-radius: 6px;
+  transition: width 1.1s ease;
+}
+
 
 
 /* EDUCATION */
@@ -687,6 +723,7 @@ body {
   background-color: #1d4ed8;
   border-color: #1d4ed8;
 }
+
 
 
 
